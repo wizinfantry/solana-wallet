@@ -15,7 +15,7 @@ This library requires you to initialize the Solana connection before using its f
 ### 1. Initialize Solana Connection
 
 ```javascript
-import { initializeSolanaConnection } from 'solana-wallet';
+import { initializeSolanaConnection } from 'solana-wallet-js';
 import { clusterApiUrl } from '@solana/web3.js'; // Required for clusterApiUrl
 
 // Initialize with Devnet (default if rpcUrl is omitted)
@@ -34,7 +34,7 @@ console.log("Connected to custom RPC");
 ### 2. Create a New Wallet
 
 ```javascript
-import { initializeSolanaConnection, createWallet } from 'solana-wallet';
+import { initializeSolanaConnection, createWallet } from 'solana-wallet-js';
 import { clusterApiUrl } from '@solana/web3.js';
 
 initializeSolanaConnection(clusterApiUrl('devnet')); // Initialize connection first
@@ -47,7 +47,7 @@ console.log('New Wallet Private Key:', newWallet.privateKey);
 ### 3. Create Wallet from Private Key
 
 ```javascript
-import { initializeSolanaConnection, createWalletFromPrivateKey } from 'solana-wallet';
+import { initializeSolanaConnection, createWalletFromPrivateKey } from 'solana-wallet-js';
 import { clusterApiUrl } from '@solana/web3.js';
 
 initializeSolanaConnection(clusterApiUrl('devnet')); // Initialize connection first
@@ -60,7 +60,7 @@ console.log('Wallet Public Key:', wallet.publicKey);
 ### 4. Get SOL Balance
 
 ```javascript
-import { initializeSolanaConnection, getSolBalance } from 'solana-wallet';
+import { initializeSolanaConnection, getSolBalance } from 'solana-wallet-js';
 import { clusterApiUrl } from '@solana/web3.js';
 
 initializeSolanaConnection(clusterApiUrl('devnet')); // Initialize connection first
@@ -76,7 +76,7 @@ getSolBalance(publicKey).then(data => {
 ### 5. Send SOL
 
 ```javascript
-import { initializeSolanaConnection, sendSol } from 'solana-wallet';
+import { initializeSolanaConnection, sendSol } from 'solana-wallet-js';
 import { clusterApiUrl } from '@solana/web3.js';
 
 initializeSolanaConnection(clusterApiUrl('devnet')); // Initialize connection first
@@ -95,7 +95,7 @@ sendSol(fromPrivateKey, toPublicKey, amount).then(data => {
 ### 6. Get SPL Token Balance
 
 ```javascript
-import { initializeSolanaConnection, getSplBalance } from 'solana-wallet';
+import { initializeSolanaConnection, getSplBalance } from 'solana-wallet-js';
 import { clusterApiUrl } from '@solana/web3.js';
 
 initializeSolanaConnection(clusterApiUrl('devnet')); // Initialize connection first
@@ -113,7 +113,7 @@ getSplBalance(publicKey, tokenAddress).then(data => {
 ### 7. Send SPL Token
 
 ```javascript
-import { initializeSolanaConnection, sendSplToken } from 'solana-wallet';
+import { initializeSolanaConnection, sendSplToken } from 'solana-wallet-js';
 import { clusterApiUrl } from '@solana/web3.js';
 
 initializeSolanaConnection(clusterApiUrl('devnet')); // Initialize connection first
