@@ -1,5 +1,5 @@
 {
-  "name": "solana-wallet",
+  "name": "solana-wallet-js",
   "version": "1.0.2",
   "description": "A lightweight JavaScript library for interacting with the Solana blockchain, offering functionalities for wallet creation, SOL and SPL token balance retrieval, and transfers. Supports configurable RPC connections.",
   "main": "index.js",
